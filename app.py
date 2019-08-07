@@ -17,7 +17,7 @@ mysql = MySQL(app)
 
 @app.route('/')
 def index():
-    return "<h1>Welcome</h1>"
+    return render_template('index.html')
 
 @app.route('/signup', methods=['GET','POST'])
 def signup():
