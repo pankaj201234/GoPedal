@@ -25,7 +25,6 @@ def about():
 
 @app.route('/signup', methods=['GET','POST'])
 def signup():
-#    flash("I LOVE YOU")
     if request.method == 'POST':
         userDetails = request.form
         name = userDetails['name']
